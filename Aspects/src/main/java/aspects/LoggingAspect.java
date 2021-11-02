@@ -14,7 +14,7 @@ public class LoggingAspect {
     //AspectJ /return type , package , class , method , parameters
     @Around("execution(* services.*.publishComment(..))")
     /*ProceedingJoinPoint represents intercepted method(in this case
-    any method in any class inside services package)*/
+   publishComment() in any class inside services package)*/
     public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
         String methodName = joinPoint.getSignature().getName();
         Object[] args = joinPoint.getArgs();
