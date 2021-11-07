@@ -1,0 +1,4 @@
+INSERT INTO account
+VALUES (NULL, '1', 123);
+INSERT INTO account
+VALUES (NULL, '2', 1234);
